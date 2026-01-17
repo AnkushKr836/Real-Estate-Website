@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings - LuxeHomes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LuxeHomes</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#consultation" class="btn-consultation">Get Consultation</a>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Premium Property Listings</h1>
+            <p>Browse our exclusive collection of luxury homes</p>
+        </div>
+    </section>
+
+    <!-- LISTINGS CONTENT -->
+    <section class="listings-section">
+        <div class="container">
+            <div class="listings-layout">
+                <!-- FILTER SIDEBAR -->
+                <aside class="filter-sidebar">
+                    <h3>Refine Your Search</h3>
+                    
+                    <div class="filter-group">
+                        <label>Property Type</label>
+                        <select class="filter-select">
+                            <option>All Types</option>
+                            <option>House</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Penthouse</option>
+                            <option>Condo</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <select class="filter-select">
+                            <option>All Locations</option>
+                            <option>Manhattan, NY</option>
+                            <option>Beverly Hills, CA</option>
+                            <option>Miami Beach, FL</option>
+                            <option>San Francisco, CA</option>
+                            <option>Los Angeles, CA</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <select class="filter-select">
+                            <option>Any Price</option>
+                            <option>Under $1M</option>
+                            <option>$1M - $2M</option>
+                            <option>$2M - $5M</option>
+                            <option>$5M - $10M</option>
+                            <option>$10M+</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Bedrooms</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-filter">Apply Filters</button>
+                    <button class="btn-reset">Reset All</button>
+                </aside>
+
+                <!-- PROPERTY GRID -->
+                <div class="listings-content">
+                    <div class="listings-header">
+                        <p class="results-count">Showing 12 properties</p>
+                        <select class="sort-select">
+                            <option>Sort by: Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest First</option>
+                        </select>
+                    </div>
+
+                    <div class="listings-grid">
+                        <!-- Property Card 1 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$2,450,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Modern Villa Estate</h3>
+                                <p class="listing-location">📍 Beverly Hills, CA</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 4 Beds</span>
+                                    <span>📐 3,200 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 2 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$3,890,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Luxury Penthouse</h3>
+                                <p class="listing-location">📍 Manhattan, NY</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 3 Beds</span>
+                                    <span>📐 2,800 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 3 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$5,200,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Oceanfront Paradise</h3>
+                                <p class="listing-location">📍 Miami Beach, FL</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 5 Beds</span>
+                                    <span>📐 4,500 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 4 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$1,850,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Garden Villa Retreat</h3>
+                                <p class="listing-location">📍 Los Angeles, CA</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 3 Beds</span>
+                                    <span>📐 2,400 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 5 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$2,950,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Contemporary Masterpiece</h3>
+                                <p class="listing-location">📍 San Francisco, CA</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 4 Beds</span>
+                                    <span>📐 3,000 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 6 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$7,200,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Hillside Manor</h3>
+                                <p class="listing-location">📍 Beverly Hills, CA</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 6 Beds</span>
+                                    <span>📐 5,800 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 7 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$4,350,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Skyline View Penthouse</h3>
+                                <p class="listing-location">📍 Manhattan, NY</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 3 Beds</span>
+                                    <span>📐 2,600 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 8 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$3,100,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Coastal Elegance</h3>
+                                <p class="listing-location">📍 Miami Beach, FL</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 4 Beds</span>
+                                    <span>📐 3,400 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 9 -->
+                        <div class="listing-card">
+                            <div class="listing-image">
+                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Property">
+                                <span class="price-badge">$2,690,000</span>
+                            </div>
+                            <div class="listing-content">
+                                <h3 class="listing-title">Urban Oasis</h3>
+                                <p class="listing-location">📍 Los Angeles, CA</p>
+                                <div class="listing-features">
+                                    <span>🛏️ 3 Beds</span>
+                                    <span>📐 2,700 sqft</span>
+                                </div>
+                                <a href="property.html" class="btn-view">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 LuxeHomes. All rights reserved. Crafted with excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1137,6 +1137,39 @@ a{
     line-height: 1.7;
 }
 
+/*legality*/
+.legality-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.legality-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.legality-label {
+    font-weight: 500;
+    color: #444;
+}
+
+.legality-value {
+    font-weight: 600;
+    color: #222;
+}
+
+.legality-value.verified {
+    color: #2e7d32;
+}
+
+.legality-value.warning {
+    color: #c62828;
+}
 
 
 /* Footer All Pages */

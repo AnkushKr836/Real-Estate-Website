@@ -813,6 +813,10 @@ a{
     border-radius: 8px;
 }
 
+.floorplan-3d-wrapper {
+    overflow: hidden;
+}
+
 .details-right{
     position:relative;
 }
@@ -1170,6 +1174,8 @@ a{
 .legality-value.warning {
     color: #c62828;
 }
+
+
 
 
 /* Footer All Pages */

@@ -6,6 +6,7 @@
     <title>Modern Villa Estate - LuxeHomes</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <!-- NAVIGATION -->
@@ -127,13 +128,26 @@
                             </div>
                         </div>
                     </div>
+                        <div class="detail-card">
+                            <h2>Floor Plan & 3D View</h2>
 
-                            <div class="detail-card">
-                                <h2>Floor Plan</h2>
-                                <div class="floorplan-image">
-                                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=500&fit=crop" alt="Floor Plan">
-                                </div>
+                            <div class="floorplan-3d-wrapper">
+                                <model-viewer
+                                    src="./model.glb"
+                                    alt="3D floor plan model"
+                                    camera-controls
+                                    auto-rotate
+                                    shadow-intensity="1"
+                                    exposure="1"
+                                    environment-image="neutral"
+                                    touch-action="pan-y"
+                                    style="width: 100%; height: 420px; background: #f4f4f4; border-radius: 12px;">
+                                </model-viewer>
                             </div>
+
+                            <p style="margin-top: 10px; font-size: 0.9rem; color: #555;">
+                                Interactive 3D floor plan – rotate, zoom, and explore room layouts.
+                            </p>
                         </div>
 
                         <!-- RIGHT COLUMN -->

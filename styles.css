@@ -23,6 +23,7 @@ body{
     color: var(--text-dark);
     background-color: var(--bg-white);
     line-height: 1.6;
+    animation: bgShift 15s infinite alternate;
 }
 /* h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', serif;
@@ -34,8 +35,48 @@ a{
     color: inherit;
 }
 
+@keyframes bgShift {
+    0% {
+        background-color: #f2f6fb;
+    }
+    50% {
+        background-color: #e6ecf5;
+    }
+    100% {
+        background-color: #dbe4f0;
+    }
+}
+
+.site-title {
+    font-size: 2.5rem;
+    color: #003366;
+    text-align: center;
+    animation: glowText 2.5s infinite alternate;
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    100% {
+        text-shadow: 2px 2px 12px rgba(0,51,102,0.6);
+    }
+}
 
 /* LOGO */
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #000; /* prevents white flash */
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+    transition: opacity 1.2s ease-in-out;
+    opacity: 1;
+}
 
 
 /* NAVBAR */
@@ -131,6 +172,9 @@ a{
     font-size: 55px;
     color: var(--primary-color);
     margin-bottom: 25px;
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.35),
+        0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .hero-content p{

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     
 </head>
+<script src="visitor.js"></script>
 <body>
     <!-- NAVIGATION BAR -->
     <nav class="navbar">
@@ -36,8 +37,13 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop" alt="Luxury Home">
+                <img 
+                    id="heroSlider"
+                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop"
+                    alt="Luxury Home"
+                >
             </div>
+
         </div>
     </section>
 
@@ -230,5 +236,41 @@
             <p>&copy; 2026 LuxeHomes. All rights reserved. Crafted with excellence.</p>
         </div>
     </footer>
+
+<script>
+    let visits = localStorage.getItem("visitCount");
+    visits = visits ? parseInt(visits) + 1 : 1;
+    localStorage.setItem("visitCount", visits);
+
+    let username = localStorage.getItem("username");
+
+    if (!username) {
+        username = prompt("Enter your name:");
+        localStorage.setItem("username", username);
+    }
+
+    alert(`Welcome back, ${username}! Visit count: ${visits}`);
+    const heroImages = [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+    ];
+
+    let currentIndex = 0;
+    const heroImg = document.getElementById("heroSlider");
+
+    setInterval(() => {
+        heroImg.style.opacity = 0.6; 
+
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % heroImages.length;
+            heroImg.src = heroImages[currentIndex];
+            heroImg.style.opacity = 1;
+        }, 700); 
+    }, 4500); 
+</script>
+
+
 </body>
 </html>
